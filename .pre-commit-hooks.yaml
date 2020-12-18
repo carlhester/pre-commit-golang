@@ -87,3 +87,9 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go mod vendor`, requires golang"
+-   id: username-in-file
+    name: 'username-in-file'
+    entry: run-username-in-file.sh
+    files: '^.*$'
+    language: 'script'
+    description: "check if $USER was left in the file"

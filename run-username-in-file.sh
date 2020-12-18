@@ -2,7 +2,8 @@
 failed=false
 
 for file in "$@"; do
-    if ! grep -c $USER "$file" 2>&1
+    grep -q $USER "$file" 2>&1
+    if [ $? -eq 0 ] 
     then
         failed=true
     fi

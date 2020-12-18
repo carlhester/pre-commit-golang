@@ -5,3 +5,7 @@
       -   id: check-yaml
       -   id: end-of-file-fixer
       -   id: trailing-whitespace
+-   repo: git://github.com/crucialcarl/pre-commit
+    rev: v0.1.1
+    hooks:
+      -   id: username-in-file
